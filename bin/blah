@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+var script = "";
+if (process.argv[0]=="node" | process.argv[0]=="nodejs") {
+	script = process.argv.slice(2,process.argv.length).join(" ");
+} else {
+	script = process.argv.slice(1,process.argv.length).join(" ");
+}
+if (script == "") {
+	var readline = require('readline');
+	var hasAnsi = require('has-ansi');
+	var stripAnsi = require('strip-ansi');
+	var chalk = require('chalk');
+	var repl = require('repl');
+
+	var _setPrompt = readline.Interface.prototype.setPrompt;
+	readline.Interface.prototype.setPrompt = function() {
+	  if (arguments.length === 1 && hasAnsi(arguments[0])) {
+	    return _setPrompt.call(this, arguments[0], stripAnsi(arguments[0]).length);
+	  } else {
+	    return _setPrompt.apply(this, arguments);
+	  }
+	};
+
+	var connections = 0;
+	repl.start({
+		useColors: true,
+		useGlobal: false,
+		prompt: chalk.cyan('blah> '),
+		eval: eval
+	}).on('exit', function() {
+		console.log(chalk.white.bgRed.bold("Blah Terminating"));
+       		process.exit(1);
+	});
+
+	function eval(cmd, context, filename, callback) {
+		cmd = cmd.substr(1,cmd.length-2);
+		var resultset = require('../lib/blah.js')(cmd,process.cwd());
+		callback(null,resultset);
+	}
+} else {
+	require('../lib/blah.js')(script);
+}

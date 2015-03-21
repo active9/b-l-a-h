@@ -1,0 +1,37 @@
+{
+  "name": "b-l-a-h",
+  "version": "0.0.1",
+  "description": "Basic Language Automation Helper",
+  "main": "index.js",
+  "private": true,
+  "bin": {
+    "blah": "blah"
+  },
+  "scripts": {
+    "test": "idk"
+  },
+  "keywords": [
+    "view"
+  ],
+  "author": "Active 9 LLC",
+  "license": "MIT",
+  "dependencies": {
+    "has-ansi": "*",
+    "strip-ansi": "*",
+    "chalk": "*",
+    "shelljs": "*",
+    "lodash": "*"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/active9/b-l-a-h"
+  },
+  "bugs": {
+    "url": "https://github.com/active9/b-l-a-h/issues"
+  },
+  "homepage": "https://github.com/active9/b-l-a-h"
+}
