@@ -73,6 +73,7 @@ $ node index.js examples/helloworld.blah
   - [$] Build Handler
   - [#] Rebuild Handler
   - [%] Test Handler
+  - [>] System Command Handler
   - [] Install Handler (Default No Trigger)
 
 ## Tutorials
