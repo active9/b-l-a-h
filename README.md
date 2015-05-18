@@ -74,6 +74,7 @@ $ node index.js examples/helloworld.blah
   - [#] Rebuild Handler
   - [%] Test Handler
   - [>] System Command Handler
+  - [+] BLAH RUNNER CREATOR
   - [] Install Handler (Default No Trigger)
 
 ## Tutorials
