@@ -1,6 +1,6 @@
 {
   "name": "b-l-a-h",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Basic Language Automation Helper",
   "main": "index.js",
   "bin": {
