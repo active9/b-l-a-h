@@ -8,19 +8,19 @@ var blah = require('b-l-a-h');
 console.log(blah('Hello World'));
 ```
 
-## Installation
+# Installation
 
 ```bash
 $ npm install b-l-a-h
 ```
 
-## Features
+# Features
 
   * Dynamic Package Management
   * High Performance Basic Language Automation
   * Executable for running blah files quickly
 
-## Quick Start
+# Quick Start
 
   The quickest way to get started with blah is to utilize the executable:
 
@@ -36,14 +36,14 @@ $ npm install -g b-l-a-h
 $ blah
 ```
 
-## Philosophy
+# Philosophy
 
   The blah philosophy is to provide a lightweight robust basic language automation helper, making
   it a great solution for bash like script runners.
 
   Blah utilizes runners to perform javascript tasks or falls back to npmjs packages.
 
-## Examples
+# Examples
 
   To view the examples, clone the Blah repo and install the dependencies:
 
@@ -59,7 +59,7 @@ $ npm install
 $ node index.js examples/helloworld.blah
 ```
 
-## Reference
+# Reference
 
   Blah uses triggers to alter an object runner. By default the trigger is set for install/run.
 
@@ -77,9 +77,9 @@ $ node index.js examples/helloworld.blah
   - [+] Blah Runner Creator
   - [] Install Handler (Default No Trigger)
 
-## Tutorials
+# Tutorials
 
-###runners.blah
+##runners.blah
   This tutorial teaches the use of blah runners. A runner is simply a script located in the runners folder of your .blah file.
   
   Lets make a folder called test.
@@ -127,7 +127,7 @@ hello -rpid
 
 Now if you ran this example rpid would uninstall from the node_modules folder. Triggers can be used before any package runner name. 
 
-###expressupdate.blah
+##expressupdate.blah
   Creating a blah update script is simple. Let's create a script that updates express. Save the below text into the file expressupdate.blah
 ```js
 ^express
@@ -138,10 +138,10 @@ Now run the following within the same folder as expressupdate.blah
 blah expressupdate.blah
 ```
 
-###more examples
+##more examples
   More examples an be found in the examples folder on github.
   
-## License
+# License
 
   MIT
 
