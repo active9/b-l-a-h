@@ -75,6 +75,7 @@ $ node index.js examples/helloworld.blah
   - [%] Test Handler
   - [>] System Command Handler
   - [+] Blah Runner Creator
+  - [&] Blah Add Package To package.json
   - [] Install Handler (Default No Trigger)
 
 # Tutorials
@@ -138,10 +139,20 @@ Now run the following within the same folder as expressupdate.blah
 blah expressupdate.blah
 ```
 
+##savepackage.blah
+Blah may also be used to add packages to the package.json file while executing at the same time.
+```js
+&express
+```
+
 ##more examples
   More examples an be found in the examples folder on github.
-  
+
+# Error Handling
+  Basic Language Automation Helper is designed to run in a try catch method. Currently all errors are sent directly to the console. Your script may contain errors and still fully execute as B-L-A-H does not halt on errors.
+
 # License
 
   MIT
+
 
